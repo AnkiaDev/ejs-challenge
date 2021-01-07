@@ -1,0 +1,11 @@
+<%- include('partials/header'); %>
+<h1>Home</h1>
+
+<% for(const post of posts) {%>
+    <%console.log("from ejs :", post.title)%>
+    <h3><%= post.title %></h3>
+    <p>
+        <%= post.content %>
+    </p>
+  <% } %>
+<%- include('partials/footer'); %>
